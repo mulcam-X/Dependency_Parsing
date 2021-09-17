@@ -28,7 +28,7 @@ def main():
     fail_file = []
     if opt.file_name != "":
         try:
-            f_text = "".join([line for line in open(os.path.join(corpus_dir_path, opt.file_name), 'r', encoding='utf-8')])
+            f_text = "".join([line for line in open(os.path.join(corpus_dir_path, opt.file_name), 'r', encoding='utf-16')])
             lines = [x.strip() for x in f_text.split("<body>")[1].split("</body>")[0].strip().split("\n") if x.strip() != ""]
             sent_tree = []
 
@@ -53,7 +53,7 @@ def main():
             if f_path.endswith("~") or f_path.startswith("."):
                 continue
             try:
-                f_text = "".join([line for line in open(os.path.join(corpus_dir_path, f_path))])
+                f_text = "".join([line for line in open(os.path.join(corpus_dir_path, f_path), encoding='utf-16')])
                 lines = [x.strip() for x in f_text.split("<body>")[1].split("</body>")[0].strip().split("\n") if x.strip() != ""]
 
                 sent_tree = []
