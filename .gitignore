@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+**/sejong
+result-head_final.txt
+result-head_final.error
