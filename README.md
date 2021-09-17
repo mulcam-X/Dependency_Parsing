@@ -6,4 +6,5 @@
 "1. 현대\1. 현대\1. 현대 문어\현대문어_말뭉치\구문분석_말뭉치"
 
 # 세종코퍼스 데이터를 CoNLL-U로 변환
+SejongTree2Dependency폴더에 들어가서 실행
 > python SejongToDependency.py -root_dir ./Corpus/sejong -save_file result  -head_initial ./Rules/linear_rules.txt -head_final 1
